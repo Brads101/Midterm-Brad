@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BRADS Website</title>
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-    <link rel="stylesheet" href="style.css" />
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
@@ -60,13 +59,60 @@
         </div>
     </nav>
 
-    <!-- Background Section -->
-    <div class="custom-background"></div>
-
+    <!-- Home Section -->
     <div class="home" id="home">
-        <div class="background-image d-flex justify-content-center align-items-center text-white">
+        <div class="background-image d-flex justify-content-center align-items-center text-white" style="background-image: url('brad1.jpg'); height: 100vh; background-size: cover;">
             <h1 class="display-4">Welcome to BRADS Website</h1>
         </div>
     </div>
+
+    <!-- Gallery Section -->
+    <section class="gallery bg-dark py-5" id="works">
+        <div class="text-center mb-5">
+            <h2 class="fs-2 fw-bold text-white position-relative d-inline-block">
+                My Works
+                <div class="position-absolute bottom-0 start-50 translate-middle-x bg-danger" style="height: 4px; width: 60px; border-radius: 2px;"></div>
+            </h2>
+        </div>
+        <div class="container">
+            <ul class="list-unstyled d-flex justify-content-center mb-4">
+                <li class="mx-3 py-2 px-4 text-white rounded-3 cursor-pointer hover-bg-danger" data-filter="*">All</li>
+                <li class="mx-3 py-2 px-4 text-white rounded-3 cursor-pointer hover-bg-danger" data-filter=".personal">Personal</li>
+                <li class="mx-3 py-2 px-4 text-white rounded-3 cursor-pointer hover-bg-danger" data-filter=".wedding">Wedding</li>
+                <li class="mx-3 py-2 px-4 text-white rounded-3 cursor-pointer hover-bg-danger" data-filter=".event">Event</li>
+                <li class="mx-3 py-2 px-4 text-white rounded-3 cursor-pointer hover-bg-danger" data-filter=".fashion">Fashion</li>
+                <li class="mx-3 py-2 px-4 text-white rounded-3 cursor-pointer hover-bg-danger" data-filter=".product">Product</li>
+            </ul>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card h-100 overflow-hidden">
+                        <img src="br1.jpg" class="card-img-top" alt="image 1">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 overflow-hidden">
+                        <img src="br2.jpg" class="card-img-top" alt="image 2">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 overflow-hidden">
+                        <img src="br3.jpg" class="card-img-top" alt="image 3">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 overflow-hidden">
+                        <img src="br4.jpg" class="card-img-top" alt="image 4">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 overflow-hidden">
+                        <img src="br5.jpg" class="card-img-top" alt="image 5">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
+
 </html>

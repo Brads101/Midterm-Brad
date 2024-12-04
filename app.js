@@ -27,3 +27,4 @@ function sendMail() {
         alert('Error sending email. Please try again later.');
     });
 }
+
